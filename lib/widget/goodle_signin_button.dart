@@ -15,11 +15,10 @@ class GoogleSigninButtonWidget extends StatelessWidget {
           fontWeight: FontWeight.normal, fontSize: 20, color: Colors.black87
         ),
       ),
-      onPressed: () {
-        final provider =
-            Provider.of<GoogleSignInProvider>(context,listen: false);
-        provider.login();
-      },
+      onPressed: () { final provider =
+    Provider.of<GoogleSignInProvider>(context, listen: false);
+      provider.login();
+      }
     ),
     decoration: BoxDecoration(
       color: Colors.white,

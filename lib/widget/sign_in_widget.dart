@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/widget/Goodle_signin_button.dart';
+import 'package:flutter_app/widget/goodle_signin_button.dart';
 
 class SignInWidget extends StatelessWidget {
   @override
