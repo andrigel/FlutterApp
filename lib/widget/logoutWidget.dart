@@ -12,6 +12,17 @@ class LogoutWidget extends StatelessWidget{
       Provider.of<GoogleSignInProvider>(context, listen: false);
       provider.logout();
     },
-        child: Text("Logout"));
+        child: Container(
+        child: Text("Logout",
+          style: TextStyle(
+            color: Colors.white,
+          )
+        ),
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            color: Colors.lightBlue
+          ),
+          padding: EdgeInsets.symmetric(vertical: 15,horizontal: 50)
+        ));
   }
 }

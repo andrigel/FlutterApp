@@ -19,7 +19,7 @@ class DatabaseService {
     return snapshot.docs.map((doc){
       return Product(
         name: doc.data()['name'] ?? '',
-        code: doc.data()['code'] ?? '',
+        barCode: doc.data()['barCode'] ?? '',
         feedback: doc.data()['feedback'] ?? ''
       );
     }
@@ -29,4 +29,5 @@ class DatabaseService {
     return goodsCollection.snapshots()
         .map(_goodsListFromSnaphot);
   }
+
 }

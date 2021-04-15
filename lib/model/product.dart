@@ -1,7 +1,7 @@
 class Product{
   final String name;
-  final String code;
+  final String barCode;
   final String feedback;
 
-  Product({this.name,this.code,this.feedback});
+  Product({this.name,this.barCode,this.feedback});
 }
